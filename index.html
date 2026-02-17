@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR  -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4">
+
+    <div class="flex justify-between items-center">
+
+      <!-- Logo -->
+      <h2 class="text-2xl font-bold text-violet-600">SwiftCart</h2>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#" class="hover:text-violet-600">Home</a></li>
+        <li><a href="products.html" class="hover:text-violet-600">Products</a></li>
+        <li><a href="#" class="hover:text-violet-600">About</a></li>
+        <li><a href="#" class="hover:text-violet-600">Contact</a></li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="flex items-center gap-4">
+
+        <!-- Cart -->
+        <button class="relative bg-white-600 text-white px-4 py-2 rounded-lg">
+          🛒
+          <span id="cartCount"
+                class="absolute -top-2 -right-2 bg-violet-500 text-white text-xs px-2 py-1 rounded-full">
+            0
+          </span>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="menuToggle" class="md:hidden text-2xl">
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+         class="hidden md:hidden mt-4 flex flex-col space-y-4 font-medium">
+      <a href="#" class="hover:text-blue-600">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#" class="hover:text-blue-600">About</a>
+      <a href="#" class="hover:text-blue-600">Contact</a>
+    </div>
+
+  </nav>
+</header>
+
+    <!-- ----- HERO ---------->
+   <section 
+  class="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-start"
+  style="background-image: url('assets/banner-image.png');">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 text-white max-w-2xl px-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Best Collection For You
+        </h1>
+        <p class="mb-6 text-lg">
+            Discover the latest trends in fashion, electronics & more. Shop with confidence and style with swiftCart.
+        </p>
+        <button class="bg-violet-600 hover:bg-violet-900 px-6 py-3 rounded-lg font-semibold">
+            Shop Now
+        </button>
+    </div>
+
+</section>
+
+
+
+    <!-- ---- FEATURES ---->
+    <section class="py-16 max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+
+            <div class="bg-white rounded-2xl shadow-md p-8 max-w-sm">
+    
+    <!-- Icon container -->
+    <div class="w-10 h-10 flex items-center justify-center 
+                bg-indigo-100 rounded-xl mb-6 shadow-sm">
+       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="w-6 h-6" viewBox="0 0 90 90" xml:space="preserve">
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;">
+	<path d="M 89.034 43.825 L 74.452 27.423 c -0.725 -0.816 -1.767 -1.284 -2.859 -1.284 H 58.256 v -0.448 c 0 -3.723 -3.029 -6.752 -6.751 -6.752 H 6.752 C 3.029 18.94 0 21.969 0 25.692 v 35.098 c 0 2.219 1.805 4.024 4.023 4.024 h 10.374 c 0.827 3.573 4.029 6.247 7.85 6.247 s 7.023 -2.674 7.85 -6.247 h 25.193 h 2.967 h 10.701 c 0.827 3.573 4.029 6.247 7.85 6.247 s 7.023 -2.674 7.85 -6.247 h 1.519 c 2.109 0 3.825 -1.715 3.825 -3.825 V 46.367 C 90 45.43 89.657 44.527 89.034 43.825 z M 85.213 43.993 H 67.936 c -0.336 0 -0.609 -0.274 -0.609 -0.61 v -7.785 c 0 -0.336 0.273 -0.609 0.609 -0.609 h 9.272 L 85.213 43.993 z M 6.752 21.907 h 44.753 c 2.086 0 3.784 1.698 3.784 3.785 v 0.448 v 22.322 H 2.967 v -22.77 C 2.967 23.605 4.665 21.907 6.752 21.907 z M 22.246 68.093 c -2.81 0 -5.097 -2.286 -5.097 -5.097 s 2.287 -5.097 5.097 -5.097 s 5.097 2.286 5.097 5.097 S 25.057 68.093 22.246 68.093 z M 30.218 61.846 c -0.561 -3.902 -3.917 -6.913 -7.972 -6.913 s -7.411 3.011 -7.972 6.913 H 4.023 c -0.582 0 -1.056 -0.474 -1.056 -1.057 v -9.361 h 52.322 v 10.417 H 30.218 z M 76.807 68.093 c -2.811 0 -5.097 -2.286 -5.097 -5.097 s 2.286 -5.097 5.097 -5.097 s 5.097 2.286 5.097 5.097 S 79.617 68.093 76.807 68.093 z M 86.175 61.846 h -1.397 c -0.561 -3.902 -3.917 -6.913 -7.972 -6.913 s -7.411 3.011 -7.972 6.913 H 58.256 v -32.74 h 13.337 c 0.244 0 0.478 0.105 0.641 0.288 l 2.335 2.627 h -6.634 c -1.972 0 -3.576 1.604 -3.576 3.576 v 7.785 c 0 1.972 1.604 3.577 3.576 3.577 h 19.097 v 14.029 C 87.033 61.462 86.649 61.846 86.175 61.846 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+</g>
+</svg>
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Fast Delivery
+    </h3>
+
+    <!-- Description -->
+    <p class="text-gray-500 leading-relaxed">
+        Get your orders delivered to your doorstep quickly and efficiently.
+    </p>
+
+</div>
+
+
+              <div class="bg-white rounded-2xl shadow-md p-8 max-w-sm">
+    
+    <!-- Icon container -->
+    <div class="w-10 h-10 flex items-center justify-center 
+                bg-indigo-100 rounded-xl mb-6 shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="w-6 h-6" viewBox="0 0 90 90" xml:space="preserve">
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;">
+	<path d="M 80.747 39.079 C 77.668 22.231 62.891 9.417 45.167 9.417 c -17.724 0 -32.501 12.814 -35.58 29.662 c -5.317 0.765 -9.42 5.337 -9.42 10.861 v 11.322 c 0 6.058 4.929 10.986 10.987 10.986 h 2.352 c 2.926 0 5.307 -2.381 5.307 -5.306 V 44.261 c 0 -2.926 -2.381 -5.307 -5.307 -5.307 h -0.882 c 3.086 -15.141 16.504 -26.57 32.544 -26.57 c 16.04 0 29.458 11.429 32.544 26.57 h -0.883 c -2.925 0 -5.306 2.381 -5.306 5.307 v 22.682 c 0 2.925 2.381 5.306 5.306 5.306 h 2.352 c 6.059 0 10.987 -4.929 10.987 -10.986 V 49.941 C 90.167 44.417 86.064 39.844 80.747 39.079 z M 15.845 44.261 v 22.682 c 0 1.289 -1.049 2.339 -2.34 2.339 h -2.352 c -4.422 0 -8.02 -3.598 -8.02 -8.019 V 49.941 c 0 -4.422 3.598 -8.019 8.02 -8.019 h 2.352 C 14.796 41.921 15.845 42.971 15.845 44.261 z M 87.2 61.263 c 0 4.422 -3.598 8.019 -8.02 8.019 h -2.352 c -1.289 0 -2.339 -1.05 -2.339 -2.339 V 44.261 c 0 -1.29 1.05 -2.34 2.339 -2.34 h 2.352 c 4.423 0 8.02 3.597 8.02 8.019 V 61.263 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(154,13,174); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+</g>
+</svg>
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        24/7 support
+    </h3>
+
+    <!-- Description -->
+    <p class="text-gray-500 leading-relaxed">
+       Our support team is available around the clock to assist you.
+    </p>
+
+</div>
+
+
+     <div class="bg-white rounded-2xl shadow-md p-8 max-w-sm">
+    
+    <!-- Icon container -->
+    <div class="w-10 h-10 flex items-center justify-center 
+                bg-indigo-100 rounded-xl mb-6 shadow-sm">
+       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="w-6 h-6" viewBox="0 0 90 90" xml:space="preserve">
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;">
+	<path d="M 45 89.998 c -0.867 0 -1.734 -0.137 -2.559 -0.41 c -19.586 -6.506 -32.241 -22.036 -32.241 -39.566 V 18.234 c 0 -2.718 1.936 -5.043 4.603 -5.529 l 0 0 c 10.332 -1.879 19.341 -5.76 26.775 -11.534 c 2.014 -1.564 4.828 -1.564 6.843 0 c 7.435 5.774 16.442 9.655 26.775 11.534 c 2.666 0.485 4.602 2.811 4.602 5.529 v 31.788 c 0 17.53 -12.654 33.061 -32.238 39.566 C 46.734 89.861 45.867 89.998 45 89.998 z M 15.519 16.641 c -0.764 0.139 -1.318 0.809 -1.318 1.593 v 31.788 c 0 15.776 11.58 29.817 29.5 35.77 c 0.837 0.279 1.76 0.277 2.6 0 c 17.919 -5.952 29.498 -19.993 29.498 -35.77 V 18.234 c 0 -0.784 -0.555 -1.455 -1.318 -1.593 c -10.972 -1.996 -20.564 -6.138 -28.512 -12.31 c -0.57 -0.441 -1.366 -0.442 -1.937 0 C 36.084 10.503 26.491 14.645 15.519 16.641 L 15.519 16.641 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(154,27,207); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+	<path d="M 40.439 58.572 c -0.613 0 -1.191 -0.281 -1.571 -0.762 l -9.121 -11.572 c -0.684 -0.868 -0.535 -2.125 0.333 -2.809 c 0.868 -0.685 2.126 -0.534 2.809 0.333 l 7.55 9.58 l 16.672 -21.152 c 0.685 -0.869 1.94 -1.016 2.809 -0.333 c 0.867 0.684 1.017 1.941 0.332 2.809 L 42.01 57.811 C 41.631 58.291 41.052 58.572 40.439 58.572 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(154,27,207); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+</g>
+</svg>
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-xl font-semibold text-gray-800 mb-3">
+        Secure payment
+    </h3>
+
+    <!-- Description -->
+    <p class="text-gray-500 leading-relaxed">
+        Experience safe and secure transactions with our encrypted payment systems.
+    </p>
+
+</div>
+
+
+       <div class="bg-white rounded-2xl shadow-md p-8 max-w-sm">
+  <!-- Icon container -->
+  <div class="w-10 h-10 flex items-center justify-center 
+              bg-indigo-100 rounded-xl mb-6 shadow-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" class="w-6 h-6">
+      <g fill="none" stroke="none" fill-rule="nonzero">
+        <path d="M28.925 44.666c0.561 0 1.117-0.234 1.513-0.691 0.724-0.835 0.633-2.098-0.203-2.821L8.492 22.333 30.235 3.513c0.836-0.723 0.927-1.986 0.203-2.821-0.721-0.834-1.986-0.927-2.82-0.203L4.127 20.821c-0.439 0.38-0.691 0.932-0.691 1.512 0 0.581 0.252 1.132 0.691 1.512l23.49 20.333C27.995 44.506 28.461 44.666 28.925 44.666z" fill="#000"/>
+        <path d="M28.926 90h22.805c19.207 0 34.833-15.626 34.833-34.834 0-19.207-15.626-34.833-34.833-34.833H5.436c-1.104 0-2 0.895-2 2 0 1.104 0.895 2 2 2h46.295c17.001 0 30.833 13.832 30.833 30.833C82.564 72.168 68.732 86 51.731 86H28.926c-1.104 0-2 0.896-2 2C26.926 89.104 27.821 90 28.926 90z" fill="#000"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Title -->
+  <h3 class="text-xl font-semibold text-gray-800 mb-3">
+Easy returns </h3>
+
+  <!-- Description -->
+  <p class="text-gray-500 leading-relaxed">
+    Not Satisfied? Return your products easily within 30 days.
+  </p>
+</div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-------- TRENDING ------>
+    <section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Top Rated Products
+    </h2>
+
+    <div id="top-products" class="grid md:grid-cols-3 gap-8">
+
+    </div>
+
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
